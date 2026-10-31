@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: music-mood-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: BACKEND_CORS_ORIGINS
+        sync: false
+      - key: YOUTUBE_API_KEY
+        sync: false

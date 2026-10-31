@@ -1,0 +1,93 @@
+.compare-songs { margin-bottom: 14px; }
+.compare-songs-note { color: #94a3b8; font-size: 0.84rem; }
+
+.compare-select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.compare-select-grid label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+.compare-select-grid select {
+  background: #0a0a14;
+  border: 1px solid #2d2d50;
+  color: #e2e8f0;
+  border-radius: 8px;
+  min-height: 40px;
+  padding: 8px;
+}
+
+.compare-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.compare-song-card {
+  border: 1px solid #2d2d50;
+  border-radius: 10px;
+  background: #0f0f1e;
+  padding: 12px;
+}
+.compare-song-card h4 {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+.compare-song-card p {
+  margin: 3px 0 8px;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+.compare-pill {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  color: #cbd5e1;
+}
+
+.compare-delta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.delta-card {
+  border: 1px solid #334155;
+  background: #111827;
+  border-radius: 10px;
+  padding: 10px;
+}
+.delta-card span { display: block; color: #64748b; font-size: 0.72rem; margin-bottom: 4px; }
+.delta-card strong { color: #e2e8f0; font-size: 0.84rem; }
+
+.overlap-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.overlap-list span {
+  border: 1px solid #2d2d50;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  color: #cbd5e1;
+  background: #1b1b35;
+}
+
+@media (max-width: 900px) {
+  .compare-select-grid,
+  .compare-panels,
+  .compare-delta-grid {
+    grid-template-columns: 1fr;
+  }
+}

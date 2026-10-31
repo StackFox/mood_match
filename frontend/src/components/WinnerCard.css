@@ -1,0 +1,23 @@
+.winner-card {
+  display: flex; gap: 24px; align-items: flex-start;
+  border: 2px solid; border-radius: 16px; padding: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) { .winner-card { flex-direction: column; } }
+
+.winner-left { display: flex; gap: 16px; align-items: flex-start; flex: 1; min-width: 0; }
+.winner-emoji { font-size: 3rem; flex-shrink: 0; line-height: 1; }
+.winner-label { font-size: 0.75rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.winner-mood { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 4px; }
+.winner-song { font-size: 0.82rem; color: #64748b; margin-bottom: 8px; }
+.winner-description { font-size: 0.83rem; color: #94a3b8; line-height: 1.5; max-width: 320px; }
+
+.winner-right { flex: 0 1 240px; min-width: 0; }
+.winner-reason-label { font-size: 0.68rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.winner-reason { font-size: 0.8rem; color: #94a3b8; line-height: 1.6; }
+
+@media (max-width: 700px) {
+  .winner-card { padding: 18px; }
+  .winner-mood { font-size: 1.25rem; }
+  .winner-description { max-width: none; }
+}

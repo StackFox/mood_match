@@ -1,0 +1,90 @@
+.umap-explorer { display: grid; gap: 12px; }
+
+.umap-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.umap-controls label {
+  display: grid;
+  gap: 6px;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+.umap-controls select {
+  min-height: 40px;
+  background: #0a0a14;
+  border: 1px solid #2d2d50;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.umap-map-area {
+  position: relative;
+  min-height: 280px;
+  border: 1px dashed #334155;
+  border-radius: 12px;
+  background: radial-gradient(circle at 20% 10%, rgba(124,58,237,0.12), transparent 35%), #0f0f1e;
+  overflow: hidden;
+}
+
+.umap-point {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #0f172a;
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.4);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.umap-point.active {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.22);
+}
+
+.umap-axis {
+  position: absolute;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+.umap-axis.x { left: 12px; bottom: 8px; }
+.umap-axis.y { right: 10px; top: 10px; writing-mode: vertical-rl; text-orientation: mixed; }
+
+.umap-tooltip-card {
+  border: 1px solid #2d2d50;
+  border-radius: 10px;
+  padding: 12px;
+  background: #111827;
+}
+.umap-tooltip-card h4 { margin: 0; color: #e2e8f0; }
+.umap-tooltip-card p { margin: 6px 0; color: #94a3b8; font-size: 0.84rem; line-height: 1.5; }
+.umap-mini-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.umap-mini-stats span {
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  color: #cbd5e1;
+}
+.umap-sample-songs strong { display: block; margin-bottom: 4px; color: #e2e8f0; font-size: 0.8rem; }
+.umap-sample-songs div { color: #94a3b8; font-size: 0.8rem; line-height: 1.5; }
+
+.umap-explorer-loading,
+.umap-explorer-error {
+  color: #94a3b8;
+  font-size: 0.86rem;
+  padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+  .umap-controls { grid-template-columns: 1fr; }
+}

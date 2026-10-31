@@ -1,0 +1,8 @@
+flowchart TD
+    U[User] --> F[React Frontend]
+    F -->|REST API| B[FastAPI Backend]
+    B --> M[(Pickled Models\nK-Means, HDBSCAN, GMM)]
+    B --> S[(Scalers + Feature Engineering)]
+    B --> SP[Spotify Web API]
+    B --> D[(Cluster Metadata + Recommendations)]
+    F --> V[Charts, UMAP Views, Explainability UI]

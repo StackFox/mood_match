@@ -1,0 +1,132 @@
+.history-panel { margin-top: 12px; }
+
+.history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-clear {
+  padding: 5px 10px;
+  font-size: 0.72rem;
+}
+
+.history-empty {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 30px;
+  gap: 8px;
+  align-items: start;
+}
+
+.history-side-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-load {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #1e1e3a;
+  background: #0f0f1e;
+  border-radius: 10px;
+  padding: 10px;
+  color: inherit;
+}
+
+.history-load:hover {
+  border-color: #334155;
+}
+
+.history-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 4px;
+}
+
+.history-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+.history-mood {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.history-delete {
+  border: 1px solid #2d2d50;
+  background: #141428;
+  border-radius: 8px;
+  color: #94a3b8;
+  height: 30px;
+}
+
+.history-play {
+  border: 1px solid #2d2d50;
+  background: #141428;
+  border-radius: 8px;
+  color: #a78bfa;
+  height: 30px;
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.history-player {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  border: 1px solid #2d2d50;
+  border-radius: 10px;
+  padding: 8px;
+  background: #0f0f1e;
+}
+
+.history-embed,
+.history-audio {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.history-embed {
+  height: 152px;
+  background: #0a0a14;
+  margin-bottom: 8px;
+}
+
+.history-audio {
+  margin-bottom: 8px;
+}
+
+.history-open-link {
+  width: 100%;
+  justify-content: center;
+}
+
+.history-delete:hover {
+  color: #fca5a5;
+  border-color: #7f1d1d;
+}
+
+.history-play:hover {
+  color: #e2e8f0;
+  border-color: #7c3aed;
+}

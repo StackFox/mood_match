@@ -1,0 +1,10 @@
+flowchart TD
+    A[Search Song] --> B[Select Track]
+    B --> C{Preview available?}
+    C -->|Yes| D[Play 30s Preview]
+    C -->|No| E[Open Spotify Player/Embed]
+    D --> F[Analyze Track]
+    E --> F
+    F --> G[Run K-Means + HDBSCAN + GMM]
+    G --> H[Winner Mood + Confidence + Why]
+    H --> I[Recommendations + History Save]

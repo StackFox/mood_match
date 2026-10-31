@@ -1,0 +1,11 @@
+flowchart TD
+    I[Spotify Track or Manual Input] --> R[Raw Features]
+    R --> FE[Feature Engineering\nmood_ev, mood_dark, mood_groove, log transforms]
+    FE --> SC[Scale with training scaler]
+    SC --> K[K-Means predict]
+    SC --> H[HDBSCAN approximate_predict]
+    SC --> G[GMM predict_proba]
+    K --> O[Unified response payload]
+    H --> O
+    G --> O
+    O --> UI[Frontend: cards, charts, explainability, recs]

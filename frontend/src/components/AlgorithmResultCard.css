@@ -1,0 +1,59 @@
+.algo-card { position: relative; display: flex; flex-direction: column; gap: 14px; }
+.algo-card.winner { border-color: #7c3aed; box-shadow: 0 0 28px rgba(124,58,237,0.18); }
+
+.winner-badge-strip {
+  position: absolute; top: -11px; right: 16px;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: #fff; font-size: 0.7rem; font-weight: 800;
+  padding: 3px 12px; border-radius: 20px; letter-spacing: 0.5px;
+}
+
+.algo-header { }
+.algo-title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+.algo-name { font-size: 1.08rem; font-weight: 800; color: #e2e8f0; }
+.algo-subtitle { font-size: 0.78rem; color: #64748b; font-family: 'Courier New', monospace; line-height: 1.5; }
+
+.algo-summary-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 12px; align-items: center; }
+
+.assigned-cluster { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: #0a0a14; border-radius: 10px; border-left: 4px solid; min-width: 0; }
+.assigned-emoji { font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
+.assigned-name { font-size: 1.15rem; font-weight: 800; margin-bottom: 4px; }
+.assigned-desc { font-size: 0.9rem; color: #94a3b8; line-height: 1.55; }
+
+.conf-section { background: #0f0f1e; border: 1px solid #1e1e3a; border-radius: 10px; padding: 12px; }
+.conf-label-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.conf-label { font-size: 0.82rem; color: #94a3b8; font-weight: 500; }
+.conf-pct { font-size: 1rem; font-weight: 800; }
+.conf-bar-bg { height: 5px; background: #1e1e3a; border-radius: 3px; overflow: hidden; }
+.conf-bar-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
+
+.card-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.card-tab { background: transparent; border: 1px solid #2d2d50; color: #475569; border-radius: 6px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; cursor: pointer; transition: all 0.12s; }
+.card-tab:hover { background: #1e1e3a; color: #94a3b8; }
+.card-tab.active { background: #1e1e3a; color: #a78bfa; border-color: #7c3aed; }
+
+.chart-wrap { }
+
+.probs-wrap { display: flex; flex-direction: column; gap: 8px; }
+.prob-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.prob-name { font-size: 0.75rem; color: #94a3b8; width: clamp(110px, 38%, 180px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+.prob-bar-bg { flex: 1; height: 7px; background: #1e1e3a; border-radius: 4px; overflow: hidden; }
+.prob-bar-fill { height: 100%; border-radius: 4px; transition: width 0.7s ease; }
+.prob-pct { font-size: 0.75rem; font-weight: 700; width: 36px; text-align: right; flex-shrink: 0; }
+.probs-note { font-size: 0.72rem; color: #475569; font-style: italic; margin-top: 4px; line-height: 1.5; }
+
+.metrics-footer { display: flex; gap: 10px; margin-top: 4px; }
+.metric-chip { flex: 1; background: #0a0a14; border: 1px solid #1e1e3a; border-radius: 8px; padding: 6px 8px; text-align: center; }
+.metric-chip.best { border-color: #34d399; background: rgba(52,211,153,0.06); }
+.metric-chip-label { font-size: 0.65rem; color: #475569; margin-bottom: 2px; }
+.metric-chip-val { font-size: 0.8rem; font-weight: 700; color: #94a3b8; }
+.metric-chip.best .metric-chip-val { color: #34d399; }
+.metrics-note { font-size: 0.68rem; color: #475569; font-style: italic; }
+
+@media (max-width: 600px) {
+  .algo-summary-grid { grid-template-columns: 1fr; }
+  .assigned-name { font-size: 1rem; }
+  .assigned-desc { font-size: 0.82rem; }
+  .metrics-footer { flex-wrap: wrap; }
+  .metric-chip { min-width: calc(50% - 4px); }
+}

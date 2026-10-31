@@ -1,0 +1,11 @@
+.metrics-chart-wrap { }
+.metrics-intro { font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px; line-height: 1.5; }
+.metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px; }
+@media (max-width: 900px) { .metrics-grid { grid-template-columns: 1fr; } }
+.metric-block { background: #0f0f1e; border-radius: 12px; padding: 16px; }
+.metric-block-title { font-size: 0.82rem; font-weight: 700; color: #e2e8f0; margin-bottom: 6px; }
+.metric-block-title .better { font-size: 0.72rem; color: #34d399; font-weight: 500; }
+.metric-block-note { font-size: 0.72rem; color: #64748b; margin-bottom: 10px; line-height: 1.5; }
+.verdict-box { display: flex; align-items: flex-start; gap: 12px; background: rgba(124,58,237,0.08); border: 1px solid #2d1c6e; border-radius: 12px; padding: 16px; font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
+.verdict-box strong { color: #a78bfa; }
+.verdict-icon { font-size: 1.5rem; flex-shrink: 0; }

@@ -1,0 +1,244 @@
+.feature-panel { }
+
+.spotify-section {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #1e1e3a;
+  border-radius: 10px;
+  background: #0f0f1e;
+}
+
+.spotify-title {
+  font-size: 0.78rem;
+  color: #a78bfa;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.spotify-search-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+.spotify-search-row input {
+  width: 100%;
+  background: #0a0a14;
+  border: 1px solid #2d2d50;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+}
+
+.spotify-searching {
+  margin-top: 8px;
+  font-size: 0.74rem;
+  color: #93c5fd;
+}
+
+.spotify-popular-row {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.spotify-popular-row span {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+.spotify-popular-chip {
+  border: 1px solid #2d2d50;
+  background: #111827;
+  color: #cbd5e1;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 0.72rem;
+}
+.spotify-popular-chip:hover {
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.spotify-skeleton-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+.spotify-skeleton-item {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #2d2d50;
+  background: linear-gradient(90deg, #111827 20%, #1f2937 38%, #111827 58%);
+  background-size: 220% 100%;
+  animation: spotifyShimmer 1.4s infinite;
+}
+
+.spotify-error {
+  margin-top: 8px;
+  font-size: 0.76rem;
+  color: #fca5a5;
+}
+
+.spotify-results { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+
+.spotify-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  background: #141428;
+  border: 1px solid #1e1e3a;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.spotify-item.selected {
+  border-color: #7c3aed;
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.spotify-item-name { font-size: 0.82rem; font-weight: 700; color: #e2e8f0; }
+.spotify-item-sub { font-size: 0.74rem; color: #64748b; margin-top: 2px; }
+.spotify-analyze-btn { padding: 6px 10px; font-size: 0.74rem; }
+
+.spotify-preview-card {
+  margin-top: 10px;
+  border: 1px solid #2d2d50;
+  border-radius: 10px;
+  background: #141428;
+  padding: 10px;
+}
+
+.spotify-now-playing {
+  border-color: #7c3aed;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.14), rgba(37, 99, 235, 0.08));
+  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.2) inset;
+}
+
+.spotify-preview-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.spotify-preview-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #e2e8f0;
+}
+
+.spotify-preview-sub {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.spotify-preview-player {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.spotify-no-preview {
+  font-size: 0.76rem;
+  color: #fbbf24;
+  margin-bottom: 8px;
+}
+
+.spotify-no-preview-wrap {
+  margin-bottom: 10px;
+}
+
+.spotify-embed-player {
+  width: 100%;
+  height: 152px;
+  border: 0;
+  border-radius: 10px;
+  background: #0a0a14;
+  margin-bottom: 8px;
+}
+
+.spotify-open-link {
+  width: 100%;
+  justify-content: center;
+}
+
+.spotify-run-btn {
+  width: 100%;
+}
+
+.manual-analyze-btn {
+  width: 100%;
+}
+
+.manual-fallback {
+  border-top: 1px dashed #2d2d50;
+  padding-top: 10px;
+}
+
+.manual-fallback > summary {
+  cursor: pointer;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.song-info { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.field label { display: block; font-size: 0.75rem; color: #64748b; margin-bottom: 5px; font-weight: 500; }
+.field input { width: 100%; background: #0a0a14; border: 1px solid #2d2d50; border-radius: 8px; padding: 8px 12px; color: #e2e8f0; font-size: 0.88rem; outline: none; transition: border 0.15s; }
+.field input:focus { border-color: #7c3aed; }
+
+.presets-section { margin-bottom: 18px; }
+.presets-label { font-size: 0.72rem; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.presets-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.preset-btn { background: #1e1e3a; border: 1px solid #2d2d50; color: #94a3b8; border-radius: 7px; padding: 6px 4px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.preset-btn:hover { background: #2d2d50; color: #e2e8f0; border-color: #4a4a70; }
+
+.sliders-section { margin-bottom: 20px; }
+.slider-row { margin-bottom: 13px; }
+.slider-label-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+.slider-name { font-size: 0.78rem; color: #94a3b8; font-weight: 500; }
+.slider-hint { font-size: 0.68rem; color: #475569; }
+.slider-val { font-size: 0.82rem; font-weight: 700; color: #a78bfa; }
+
+input[type="range"] {
+  width: 100%; -webkit-appearance: none; height: 4px; border-radius: 2px;
+  background: linear-gradient(to right, #7c3aed var(--pct, 50%), #1e1e3a var(--pct, 50%));
+  outline: none; cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%;
+  background: #a78bfa; cursor: pointer; border: 2px solid #0a0a14;
+  box-shadow: 0 0 6px rgba(167,139,250,0.4);
+}
+
+.reset-btn { width: 100%; margin-top: 8px; justify-content: center; }
+
+@media (max-width: 700px) {
+  .song-info { grid-template-columns: 1fr; }
+  .presets-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .spotify-item { grid-template-columns: 1fr; }
+  .spotify-analyze-btn,
+  .spotify-popular-chip,
+  .preset-btn,
+  .manual-fallback > summary {
+    min-height: 40px;
+  }
+  .spotify-run-btn,
+  .manual-analyze-btn {
+    position: sticky;
+    bottom: 10px;
+    z-index: 7;
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.45);
+  }
+}
+
+@keyframes spotifyShimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}

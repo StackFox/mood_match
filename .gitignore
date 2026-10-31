@@ -1,0 +1,61 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+backend/venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Keep template env files tracked
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Node / frontend
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local temp artifacts
+*.tmp
+*.temp
+
+# Large model/data artifacts — excluded from git (215MB of LFS pickles + CSVs;
+# fresh clones run the backend in DEMO_MODE, models retrainable from the notebook)
+backend/models/*.pkl
+backend/data1/*.csv

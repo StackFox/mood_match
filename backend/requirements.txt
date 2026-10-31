@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+scikit-learn
+hdbscan
+pydantic
+python-multipart
+requests
+pandas
+# plot rendering (backend/render_plots.py → frontend/public/plots)
+matplotlib
+seaborn
+umap-learn
